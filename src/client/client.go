@@ -71,7 +71,8 @@ func main() {
 	perReplicaCount := make([]int, N)
 	test := make([]int, *reqsNb / *rounds + *eps)
 	for i := 0; i < len(rarray); i++ {
-		r := rand.Intn(N)
+		//r := rand.Intn(N)
+		r := 0;
 		rarray[i] = r
 		if i < *reqsNb / *rounds {
 			perReplicaCount[r]++
